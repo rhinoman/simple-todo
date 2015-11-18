@@ -3,13 +3,16 @@ Simple TODO
 
 This is a simple TODO server side application.
 
-API:
+## API:
 
-GET /todo - List of all todo items
-POST /todo - Create a new todo item
+**GET /todo** - List of all todo items
 
-GET /todo/{item-id} - Fetch a todo item
-DELETE /todo/{item-id} - Delete a todo item
+**POST /todo** - Create a new todo item
+
+
+**GET /todo/{item-id}** - Fetch a todo item
+
+**DELETE /todo/{item-id}** - Delete a todo item
 
 Todo JSON example:
 ```
@@ -24,6 +27,6 @@ Todo JSON example:
 }
 ```
 
-I used CouchDB for my database (with my couchdb driver on [Github](https://github.com/rhinoman/couchdb-go)
+I picked CouchDB for my database - using my couchdb driver here: https://github.com/rhinoman/couchdb-go
 
 NOTE: The unit tests require a running couchdb instance (the docker image exposes the couchdb port)
