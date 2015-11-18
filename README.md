@@ -32,8 +32,9 @@ Todo JSON example:
 docker build --rm -t jcadam/todo .
 docker run -d -p 5984:5984 -p 8085:8085 jcadam/todo
 ```
-Note: 5984 is the couchdb port, 8085 is the golang TODO server
+Note: 5984 is the couchdb port, 8085 is the golang TODO server.
 
-I picked CouchDB for my database - using my couchdb driver here: https://github.com/rhinoman/couchdb-go
+I picked CouchDB for my database - using my couchdb driver here: https://github.com/rhinoman/couchdb-go.  You can access a nice graphical admin panel for CouchDB at: http://localhost:5984/_utils/
+
 
 NOTE: The unit tests require a running couchdb instance (the docker image exposes the couchdb port)
